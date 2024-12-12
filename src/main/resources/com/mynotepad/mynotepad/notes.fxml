@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<BorderPane style="-fx-background-color: #BFBFBF;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mynotepad.mynotepad.Controller">
+<BorderPane style="-fx-background-color: #BFBFBF;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mynotepad.mynotepad.Controller">
    <center>
       <ScrollPane hbarPolicy="NEVER" style="-fx-background-color: #BFBFBF;" vbarPolicy="ALWAYS">
          <content>
@@ -62,14 +71,14 @@
       </ScrollPane>
    </center>
    <top>
-      <MenuBar prefHeight="25.0" prefWidth="688.0" style="-fx-background-color: #White;" BorderPane.alignment="CENTER">
+      <MenuBar prefHeight="25.0" prefWidth="688.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
                   <MenuItem mnemonicParsing="false" onAction="#OnNewMenuItemClick" text="New" />
                   <MenuItem mnemonicParsing="false" onAction="#OnSaveMenuItemClick" text="Save" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-              <MenuItem mnemonicParsing="false" onAction="#OnCloseMenuItemClick" text="Close" />
+              <MenuItem mnemonicParsing="false" onAction="#OnExitMenuItemClick" text="Exit" />
             </items>
           </Menu>
             <Menu mnemonicParsing="false" text="Edit">
